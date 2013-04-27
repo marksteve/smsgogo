@@ -1,0 +1,172 @@
+body {
+  padding-top: 100px;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.navbar .container {
+  height: 100px;
+}
+
+#imgLogoHeader {
+  height: 100px;
+}
+
+.form-signin {
+max-width: 300px;
+padding: 19px 29px 29px;
+margin: 0 auto 20px;
+background-color: #fff;
+border: 1px solid #e5e5e5;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+    border-radius: 5px;
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+-moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+margin-bottom: 10px;
+}
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+font-size: 16px;
+height: auto;
+margin-bottom: 15px;
+padding: 7px 9px;
+}
+
+#carouselBackground {
+  height: 500px;
+  background: #028eb3; /* Old browsers */
+  background: -moz-linear-gradient(top,  #1f9dae 0%, #0b7186 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1f9dae), color-stop(100%,#0b7186)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #1f9dae 0%,#0b7186 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #1f9dae 0%,#0b7186 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #1f9dae 0%,#0b7186 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #1f9dae 0%,#0b7186 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f9dae', endColorstr='#0b7186',GradientType=0 ); /* IE6-9 */
+}
+
+#myCarousel {
+  margin-top: -500px;
+}
+
+#detailOnCarousel {
+  margin-top: -450px;
+  margin-left: 50px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #FFFFFF;
+  padding-right: 100px;
+}
+
+#gmailIcon {
+  width: 310px;
+}
+
+#featureBackground {
+  margin-top: -40px;
+  background: #8ecff5;
+  height: 200px;  
+}
+
+#feature {
+  margin-top: -200px;
+  height: 200px;
+  background: #FFFFFF;
+}
+
+#space1Background {
+  margin-top: -40px;
+  height: 400px;
+  background: #7393aa;
+}
+
+#space1 {
+  margin-top:-400px;
+  height: 20px;;
+  background: #FFFFFF;
+}
+
+#space1first {
+  height: 400px;
+  background: #1d6f7b;
+  width: 320px;
+ float: left;
+}
+
+#space1second {
+  height: 400px;
+  background: #4198a4;
+  width: 310px;
+  float: left;
+}
+
+#space1third {
+  height: 400px;
+  background: #56b8c5;
+  width: 310px;
+  float: left;
+}
+
+#space2Background {
+  height: 200px;
+  background: #e6e6e6;
+}
+
+#gmailIcon {
+  margin-left: 140px;
+}
+
+#fireflyApi {
+  margin-left: 140px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any padding or margin. */
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -150px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 150px;
+}
+#footer {
+  background-color: #f5f5f5;
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+  #footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#logoFooter {
+  left: 50%;
+  margin-top:-130px;
+  margin-left: -130px;
+  position: fixed;
+}
+
+#logoFooter img{
+  width: 260px;
+}
