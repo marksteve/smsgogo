@@ -31,3 +31,11 @@ exports.list = function(req, res){
     res.send(emails);
   });
 };
+
+exports.contacts = function(req, res){
+  res.render('contacts');
+};
+
+exports.message = function(req, res){
+  res.render('message');
+};
