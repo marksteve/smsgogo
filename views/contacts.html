@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>SMSGoGo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/normalize.css" rel="stylesheet" media="screen">
+    <link href="css/contacts-message.css" rel="stylesheet" media="screen">
+  </head>
+
+  <body>
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+      <!-- Navigation bar -->
+      <div class="navbar navbar navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+
+            <!-- Brand Name -->
+            <strong class="offset1">
+              <a class="brand" href="#">
+                SMSGoGo
+              </a>
+            </strong>
+
+            <ul class="nav pull-right">
+
+              <!-- Send a message -->
+              <li>
+                <a href="/message">
+                  <i class="icon-envelope"></i>
+                  Send a message
+                </a>
+              </li>
+
+              <!-- Manage contacts -->
+              <li>
+                <a href="/contacts">
+                  <i class="icon-th-list"></i>
+                  Manage contacts
+                </a>
+              </li>
+
+
+              <!-- Account dropdown -->
+              <li class="dropdown pull-right">
+
+                <!-- Account -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="icon-wrench"></i>
+                  Account
+                  <b class="caret"></b>
+                </a>
+
+                <!-- Logout -->
+                <ul class="dropdown-menu">
+                  <li>
+                    <a tabindex="-1" href="#">
+                      <i class="icon-off" ></i>
+                      Logout
+                    </a>
+                  </li>
+                </ul>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage contacts -->
+      <div class="container">
+        <div class="tabbable tabs-left">
+          <!-- Tab buttons -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#employees" data-toggle="tab">Employees</a></li>
+            <li><a href="#customers" data-toggle="tab">Customers</a></li>
+          </ul>
+          <!-- Tab contents -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="employees">
+              <p id="employeesContent"></p>
+            </div>
+            <div class="tab-pane" id="customers">
+              <p id="customersContent"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <h1> This is the footer. </h1>
+      </div>
+    </div>
+
+    <script src="js/jquery1.9.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contacts.js"></script>
+  </body>
+</html>
