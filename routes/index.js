@@ -68,3 +68,7 @@ exports.sendMessage = function(req, res){
     exports.message(req, res);
   });
 };
+
+exports.pricing = function(req, res){
+  res.render('pricing');
+};

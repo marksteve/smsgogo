@@ -39,6 +39,8 @@ app.post('/message', routes.sendMessage);
 
 app.get('/contacts', routes.contacts);
 
+app.get('/pricing', routes.pricing);
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
