@@ -1,4 +1,6 @@
-var db = require('../db');
+var db = require('../db')
+  , request = require('superagent')
+  , async = require('async');
 
 exports.index = function(req, res){
   res.render('index', {message: req.message});
@@ -38,4 +40,30 @@ exports.contacts = function(req, res){
 
 exports.message = function(req, res){
   res.render('message');
+};
+
+exports.sendMessage = function(req, res){
+  var subject = req.body.subject
+    , message = req.body.message;
+
+  async.map([
+    '09272480523',
+    '09468261942',
+    '09337204533',
+    '09172416140'
+  ], function(number, cb){
+    request
+      .get('https://fireflyapi.com/api/sms')
+      .query({
+        api: 'Zh5yg5DncRoscm4p2mcz',
+        number: number,
+        message: subject.trim() + '\n' + message.trim()
+      })
+      .end(function(res) {
+        cb(null, res.body);
+      });
+  }, function(err, results){
+    console.log(results);
+    exports.message(req, res);
+  });
 };

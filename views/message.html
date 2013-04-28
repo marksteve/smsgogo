@@ -93,14 +93,14 @@
 
           <!-- Message area -->
           <div class="span6 offset1">
-            <form>
+            <form action="" method="post">
               <h4>Subject</h4>
-              <input class="span6" id="textBoxSubject" type="text">
+              <input class="span6" id="textBoxSubject" type="text" name="subject">
               <h4>To</h4>
               <textarea class="span6" id="textBoxNames" type="text"></textarea>
               <h4>Body</h4>
-              <textarea name="comments" class="span6" rows="10" cols="2"></textarea>
-              <button class="btn btn-primary btn-block" type="button">Send</button>
+              <textarea class="span6" rows="10" cols="2" name="message"></textarea>
+              <button class="btn btn-primary btn-block" type="submit">Send</button>
             </form>
           </div>
 
