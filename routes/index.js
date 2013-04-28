@@ -50,7 +50,8 @@ exports.sendMessage = function(req, res){
     '09272480523',
     '09468261942',
     '09337204533',
-    '09172416140'
+    '09172416140',
+    '09175246984'
   ], function(number, cb){
     request
       .get('https://fireflyapi.com/api/sms')
