@@ -1,1 +1,10 @@
 include index.html
+- if (message)
+  div#message.modal.hide.fade(tabindex="-1", role="dialog")
+    | <div class="modal-body">
+    | <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    p= message
+    | </div>
+
+  script
+    $('#message').modal();
